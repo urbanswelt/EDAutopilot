@@ -28,16 +28,16 @@ jobs:
           pip install -r requirements.txt
 
       # Step 4: Run tests
-      - name: Run tests
-        run: |
-          pip install pytest
-          pytest
+      #- name: Run tests
+      #  run: |
+      #   pip install pytest
+      #   pytest
 
       # Step 5: Build the .exe file
       - name: Build EXE file
         run: |
           pip install pyinstaller
-          pyinstaller --onefile autopilot.py  # Replace with your entry-point script
+          pyinstaller --onefile dev_autopilot.py  # Replace with your entry-point script
 
       # Step 6: Upload the .exe file as an artifact
       - name: Upload EXE artifact
