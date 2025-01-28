@@ -51,7 +51,7 @@ the left or the right slot, and this program will automatically fetch your most 
     * Reset Headlook
 
 ## Optimal Game Settings:
-1. Game resolution:      1080p Borderless
+1. Game resolution:      1080p Borderless (1920 × 1080)
 2. Ship UI color:        Orange (default colour)
 3. Ship UI brightness:   Maximum
 

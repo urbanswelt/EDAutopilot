@@ -129,7 +129,7 @@ logging.info('SCREEN_HEIGHT='+str(SCREEN_HEIGHT))
 def get_latest_log(path_logs=None):
     """Returns the full path of the latest (most recent) elite log file (journal) from specified path"""
     if not path_logs:
-        path_logs = environ['USERPROFILE'] + "\Saved Games\Frontier Developments\Elite Dangerous"
+        path_logs = environ['USERPROFILE'] + "\\Saved Games\\Frontier Developments\\Elite Dangerous"
     list_of_logs = [join(path_logs, f) for f in listdir(path_logs) if isfile(join(path_logs, f)) and f.startswith('Journal.')]
     if not list_of_logs:
         return None
@@ -263,7 +263,7 @@ logging.debug('ship='+str(ship()))
 
 def get_latest_keybinds(path_bindings=None):
     if not path_bindings:
-        path_bindings = environ['LOCALAPPDATA'] + "\Frontier Developments\Elite Dangerous\Options\Bindings"
+        path_bindings = environ['LOCALAPPDATA'] + "\\Frontier Developments\\Elite Dangerous\\Options\\Bindings"
     list_of_bindings = [join(path_bindings, f) for f in listdir(path_bindings) if (isfile(join(path_bindings, f)) and join(path_bindings, f).endswith("binds"))]
     if not list_of_bindings:
         return None
