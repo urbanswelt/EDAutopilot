@@ -1,5 +1,5 @@
 opencv_python~=4.2.0.34
-requests~=2.21.0
+requests~=2.32.3
 numpy~=1.18.2
 colorlog~=4.0.2
 pystray~=0.14.4
